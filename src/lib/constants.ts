@@ -12,6 +12,40 @@ export const NAV_LINKS = [
   { href: "#zawartosc", label: "Zawartość" },
   { href: "#dla-kogo", label: "Dla kogo" },
   { href: "#plan", label: "Plan 30 dni" },
+  { href: "#faq", label: "FAQ" },
+] as const;
+
+export const FAQ_ITEMS = [
+  {
+    question: "Czy 30% wystarczy, żeby zdać poprawkę?",
+    answer:
+      "Tak — na poprawce matury podstawowej z matematyki wystarczy uzyskać 30% punktów z całego arkusza. Ebook skupia się wyłącznie na tym, co daje punkty, bez nauki „wszystkiego na 100%”.",
+  },
+  {
+    question: "Dla kogo jest ten ebook?",
+    answer:
+      "Dla osób po niezdanej maturze, które mają mało czasu i chcą po prostu zdać. Nie musisz być świetny z matematyki — potrzebujesz planu i powtórzenia najczęstszych zagadnień.",
+  },
+  {
+    question: "W jakim formacie dostanę ebook?",
+    answer:
+      "Ebook otrzymasz w formacie PDF — możesz go czytać na telefonie, tablecie lub wydrukować wybrane fragmenty. Link do pobrania wyślemy na e-mail po opłaceniu zamówienia.",
+  },
+  {
+    question: "Jak szybko dostanę dostęp po zakupie?",
+    answer:
+      "Zwykle w ciągu kilku minut po płatności — na adres e-mail podany przy zamówieniu. Sprawdź też folder spam, jeśli wiadomość nie przyjdzie od razu.",
+  },
+  {
+    question: "Kiedy najlepiej zacząć naukę?",
+    answer:
+      "Im wcześniej, tym lepiej — plan jest rozłożony na 30 dni. Jeśli zostało mniej czasu, możesz przejść intensywniej przez najważniejsze tygodnie i skupić się na pewniakach oraz arkuszach.",
+  },
+  {
+    question: "Czy potrzebuję korepetytora oprócz ebooka?",
+    answer:
+      "Nie — ebook został napisany tak, żebyś mógł uczyć się samodzielnie. Jeśli utkniesz przy konkretnym zadaniu, możesz napisać na adres kontaktowy z sekcji stopki.",
+  },
 ] as const;
 
 export const FEATURES = [

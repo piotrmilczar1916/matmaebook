@@ -2,6 +2,7 @@ import { AppProviders } from "@/components/providers/AppProviders";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
 import { StickyMobileCta } from "@/components/layout/StickyMobileCta";
+import { Faq } from "@/components/sections/Faq";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { ForWho } from "@/components/sections/ForWho";
 import { Hero } from "@/components/sections/Hero";
@@ -19,6 +20,7 @@ export default function HomePage() {
         <WhatsInside />
         <ForWho />
         <Plan30Days />
+        <Faq />
         <FinalCta />
       </main>
       <Footer />
