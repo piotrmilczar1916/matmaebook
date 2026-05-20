@@ -1,3 +1,8 @@
+export const EXAM = {
+  dateIso: "2026-08-25T09:00:00",
+  label: "25 sierpnia 2026, godz. 9:00",
+} as const;
+
 export const SITE = {
   name: "MATMA NA 30%",
   tagline: "Plan ratunkowy do poprawy matury podstawowej z matematyki.",
@@ -9,42 +14,61 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
+  { href: "#kim-jestem", label: "Kim jestem" },
   { href: "#zawartosc", label: "Zawartość" },
   { href: "#dla-kogo", label: "Dla kogo" },
   { href: "#plan", label: "Plan 30 dni" },
   { href: "#faq", label: "FAQ" },
 ] as const;
 
+export const GUARANTEE_NOTE = "Gwarancja zwrotu 14 dni. Bez pytań." as const;
+
+export const GUARANTEE = {
+  title: "Gwarancja zwrotu — bez ryzyka",
+  textBeforeEmail:
+    "Jeśli po przeczytaniu uznasz, że ebook nie był dla ciebie wart pieniędzy, napisz na",
+  textAfterEmail:
+    "w ciągu 14 dni od zakupu. Zwrócę całą kwotę. Bez pytań, bez tłumaczenia.",
+} as const;
+
+export const ABOUT_GREETING = "Cześć, tu Milczar!" as const;
+
+export const ABOUT_ME = [
+  "Od jakiegoś czasu prowadzę korepetycje z matematyki — na co dzień widzę, gdzie uczniowie się gubią i co naprawdę daje punkty na maturze.",
+  "Tłumaczę prosto, tak żeby wszystko było jasne. Bez trudnych słów i bez uczenia się rzeczy, których nie będzie na maturze.",
+  "Ten ebook to ten sam plan, który stosuję na zajęciach — skondensowany do 30 dni, żebyś przed sierpniową poprawką wiedział dokładnie, na czym się skupić.",
+] as const;
+
 export const FAQ_ITEMS = [
   {
     question: "Czy 30% wystarczy, żeby zdać poprawkę?",
     answer:
-      "Tak — na poprawce matury podstawowej z matematyki wystarczy uzyskać 30% punktów z całego arkusza. Ebook skupia się wyłącznie na tym, co daje punkty, bez nauki „wszystkiego na 100%”.",
+      "Tak. Próg zdania matury podstawowej z matematyki to 30%, czyli 15 punktów z 50. Mniej niż jedna trzecia arkusza. Ten ebook nie tłumaczy całej matmy — pokazuje, gdzie te 15 punktów znaleźć najszybciej i najpewniej. Tyle wystarczy, żeby zdać.",
   },
   {
     question: "Dla kogo jest ten ebook?",
     answer:
-      "Dla osób po niezdanej maturze, które mają mało czasu i chcą po prostu zdać. Nie musisz być świetny z matematyki — potrzebujesz planu i powtórzenia najczęstszych zagadnień.",
+      "Dla osób, które oblały maturę podstawową z matematyki w maju i celują w 30% w sierpniu. Jeśli chcesz zdać wyżej niż 50%, ten ebook nie jest dla ciebie — potrzebujesz wtedy pełnego kursu albo korepetytora. Tu znajdziesz minimum, nie maksimum.",
   },
   {
-    question: "W jakim formacie dostanę ebook?",
+    question: "Co dokładnie znajdę w środku?",
     answer:
-      "Ebook otrzymasz w formacie PDF — możesz go czytać na telefonie, tablecie lub wydrukować wybrane fragmenty. Link do pobrania wyślemy na e-mail po opłaceniu zamówienia.",
+      "56 stron podzielonych na 8 rozdziałów: plan nauki na 30 dni, 10 tematów-pewniaków, które są na każdej maturze, strategia na sali egzaminacyjnej, lista 7 najczęstszych błędów oraz checklista ostatniego tygodnia. Konkrety, bez teorii od zera.",
   },
   {
-    question: "Jak szybko dostanę dostęp po zakupie?",
+    question: "Co, jeśli oblałem o dużo punktów?",
     answer:
-      "Zwykle w ciągu kilku minut po płatności — na adres e-mail podany przy zamówieniu. Sprawdź też folder spam, jeśli wiadomość nie przyjdzie od razu.",
+      "Ebook celuje w 30%, czyli 15 punktów. Jeśli w maju zdobyłeś 6 punktów, musisz nadrobić 9 — to 4–6 tematów do solidnego opanowania. Plan 30 dni jest dokładnie pod to zaprojektowany. Da się, ale wymaga zaangażowania zgodnie z planem.",
   },
   {
     question: "Kiedy najlepiej zacząć naukę?",
     answer:
-      "Im wcześniej, tym lepiej — plan jest rozłożony na 30 dni. Jeśli zostało mniej czasu, możesz przejść intensywniej przez najważniejsze tygodnie i skupić się na pewniakach oraz arkuszach.",
+      "Najlepiej od razu po ogłoszeniu wyników 8 lipca. Plan z ebooka jest rozpisany na 30 dni i prowadzi cię dzień po dniu aż do 25 sierpnia. Im wcześniej zaczniesz, tym mniej stresu na końcu — ale nawet 14 dni przed egzaminem nadal daje realną szansę na zdanie.",
   },
   {
-    question: "Czy potrzebuję korepetytora oprócz ebooka?",
+    question: "W jakim formacie dostanę ebook i jak szybko?",
     answer:
-      "Nie — ebook został napisany tak, żebyś mógł uczyć się samodzielnie. Jeśli utkniesz przy konkretnym zadaniu, możesz napisać na adres kontaktowy z sekcji stopki.",
+      "Ebook dostaniesz w formacie PDF — do otwarcia na telefonie, komputerze lub do wydrukowania. Link do pobrania wysyłany jest automatycznie na podany adres e-mail w ciągu kilku minut od zakupu.",
   },
 ] as const;
 
@@ -119,4 +143,11 @@ export const PLAN_WEEKS = [
     description:
       "Rozwiązywanie arkuszy, zarządzanie czasem i finałowa strategia na 30%.",
   },
+] as const;
+
+export const AFTER_30_DAYS = [
+  "Będziesz wiedzieć, co już ogarniasz — i czego nie musisz się uczyć na siłę",
+  "Opanujesz 6 tematów, które dają te 15 punktów potrzebnych do zdania",
+  "Wejdziesz na maturę z planem w głowie, a nie z modlitwą, że może jakoś pójdzie",
+  "Nie będziesz już zastanawiać się wieczorem, od czego zacząć naukę — plan mówi ci to za każdym razem",
 ] as const;

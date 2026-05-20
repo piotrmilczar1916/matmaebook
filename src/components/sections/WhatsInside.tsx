@@ -1,6 +1,7 @@
 import { FEATURES } from "@/lib/constants";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { FeatureCard } from "@/components/ui/FeatureCard";
+import { BuyCta } from "@/components/ui/BuyCta";
 import { Section } from "@/components/ui/Section";
 
 export function WhatsInside() {
@@ -32,6 +33,10 @@ export function WhatsInside() {
           </FadeIn>
         ))}
       </div>
+
+      <FadeIn delay={120}>
+        <BuyCta className="mt-12" />
+      </FadeIn>
     </Section>
   );
 }

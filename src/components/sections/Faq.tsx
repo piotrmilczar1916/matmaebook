@@ -1,4 +1,6 @@
 import { FAQ_ITEMS, SITE } from "@/lib/constants";
+import { formatPrice } from "@/lib/utils";
+import { BuyCta } from "@/components/ui/BuyCta";
 import { FaqItem } from "@/components/ui/FaqItem";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Section } from "@/components/ui/Section";
@@ -30,6 +32,14 @@ export function Faq() {
               />
             ))}
           </div>
+        </FadeIn>
+
+        <FadeIn delay={160}>
+          <BuyCta
+            className="mt-12"
+            label={`Kup teraz za ${formatPrice(SITE.price)}`}
+            buttonClassName="w-full sm:w-auto"
+          />
         </FadeIn>
       </div>
     </Section>

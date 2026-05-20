@@ -1,6 +1,6 @@
 "use client";
 
-import { SITE } from "@/lib/constants";
+import { GUARANTEE_NOTE, SITE } from "@/lib/constants";
 import { formatPrice } from "@/lib/utils";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
@@ -39,6 +39,7 @@ export function FinalCta() {
             >
               Kup teraz — {formatPrice(SITE.price)}
             </Button>
+            <p className="mt-3 text-xs text-neutral-500">{GUARANTEE_NOTE}</p>
           </div>
         </div>
       </FadeIn>
