@@ -113,10 +113,15 @@ export const FEATURES = [
 
 export const FOR_WHO = [
   "dla osób po niezdanej maturze",
-  "dla osób które mają mało czasu",
-  "dla osób które chcą po prostu zdać",
-  "dla osób które stresują się matematyką",
+  "dla osób, które mają mało czasu",
+  "dla osób, które chcą po prostu zdać",
+  "dla osób, które stresują się matematyką",
 ] as const;
+
+export const FOR_WHO_NOT = {
+  title: "NIE jest dla osób, które chcą zdać na 70%+",
+  description: "— wtedy potrzebujesz pełnego kursu lub korepetytora",
+} as const;
 
 export const PLAN_WEEKS = [
   {
